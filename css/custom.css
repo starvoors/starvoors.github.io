@@ -1,0 +1,811 @@
+@import url(omnes-pro.css);
+@import url(http://fonts.googleapis.com/css?family=Coda);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
+
+/*======================================================================================================
+                            Global
+=======================================================================================================*/
+
+* {
+    outline: none !important;
+    box-shadow: none;
+}
+
+a {
+    color: rgb(32, 178, 170);
+}
+
+a:hover {
+    color: #000;
+}
+
+.btn {
+    border-radius: 0;
+    transition: background 0.5s cubic-bezier(.17,.67,.83,.67);
+}
+
+.navbar-white {
+    background-color: #fff !important;
+    transition: background 0.5s ease-out;
+}
+
+.navbar-white li a {
+    color: #337ab7 !important;
+}
+
+.navbar-white .navbar-brand {
+    color: #337ab7 !important;
+}
+
+.navbar-white button.navbar-toggle {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.navbar-white button.navbar-toggle .ion-navicon {
+    color: #337ab7;
+}
+
+.form-control:focus {
+border-color: #3acab1;
+box-shadow: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: rgba(221, 221, 221, 0);
+    margin: 0;
+    line-height: 100%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.navbar-toggle {
+    padding: 0;
+    border-radius: 0;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    padding: 10px 5px;
+    min-height: 0;
+}
+
+button.navbar-toggle .ion-navicon {
+    font-size: 2em;
+    color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 31px;
+}
+
+.row
+{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+ul li
+{
+    display: list-item;
+}
+li a
+{
+    text-decoration: none;
+}
+#heading-text
+{
+    padding-top: 10px;
+}
+#heading-text h3 {
+    font-size: 49px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 58px;
+    text-transform: uppercase;
+}
+
+#heading-text p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 0px
+}
+
+.main_content
+{
+    padding: 50px 0px;
+}
+
+iframe
+{
+    width: 100%;
+}
+.form-control
+{
+    border-radius: 0px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 45px;
+  right: 50px;
+  display: none;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+ #btn-back-to-top {
+  position: fixed;
+  bottom: 22px;
+  right: 16px;
+  display: none;
+  z-index: 99;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------
+                                navbar
+-------------------------------------------------------------------------------------------------------*/
+#navigation, .navbar-default
+{
+    border-radius: 0px;
+    border: 0;
+    background-color: rgba(0,0,0,0.29);
+}
+#navigation, .navbar-white .navbar-collapse
+{
+    background-color: white;
+}
+@media (max-width: 767px) {
+  #navigation, .navbar-default
+  {
+      background-color: black;
+  }
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+    color: #E5E5E5;
+    margin: 5px 20px;
+    padding: 0;
+    line-height: 28px;
+    font-family: "Coda";
+    text-transform: capitalize;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+{
+    color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-family: "Coda";
+    padding: 5px 15px;
+    font-size: 26px;
+    line-height: 100%;
+    height: auto;
+    text-transform: uppercase;
+}
+
+.nav-wrap
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#wrapper
+{
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#overlay-1
+{
+    background-color: rgba(40, 40, 40, 0.6);
+    position: relative;
+}
+
+.starting-text
+{
+    padding: 177px 0px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
+}
+.rene {
+    font-size: 120px;
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 300;
+    margin-top: 75px;
+}
+@media (max-width: 712px){
+    .rene
+    {
+        margin-top: -10px;
+        font-size: 40px;
+        padding-top: 0px;
+    }
+}
+
+.starting-text h2 {
+    font-family: "omnes-pro", "Helvetica", sans-serif;
+    color: #fff;
+}
+
+.bottom
+{
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+}
+.bottom a
+{
+    color: rgba(192, 192, 192, 0.5);
+}
+h5
+{
+    padding-top: 22px;
+    font-size: 18px;
+}
+/*-----------------------------------------------------------------------------------------------------
+                            about us
+------------------------------------------------------------------------------------------------------*/
+.exp
+{
+    padding-top: 76px;
+}
+.progress
+{
+    background-color: #d4e3e4;
+    border-radius: 0px;
+    border-color: lightseagreen;
+}
+.progress-bar
+{
+    background-color: cadetblue;
+}
+.pro
+{
+    padding-top: 10px;
+}
+
+@media (max-width: 712px){
+  #about img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+/*----------------------------------------------------------------------------------------------------
+Our service
+-----------------------------------------------------------------------------------------------------*/
+.services
+{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.about-service
+{
+    font-size: 16px;
+    padding: 5px 10px 0px 10px;
+}
+.about-service h3 {
+    font-family: "Coda";
+    font-size: 33px;
+}
+
+.service-icon i
+{
+    padding: 20px 0px;
+    font-size: 5em;
+    transition: font-size 0.5s;
+    display: table-cell;
+    vertical-align: middle;
+}
+.service-icon
+{
+    display: table;
+    min-height: 140px;
+    text-align: center;
+    width: 100%;
+}
+hr
+{
+    border-color: rgb(101,85,124);
+}
+.full
+{
+    width: 25%;
+}
+.fa-code
+{
+    color: cadetblue;
+}
+.fa-desktop
+{
+    color: lightslategray;
+}
+.fa-th
+{
+    color: rgb(114, 184, 211);
+}
+.fa-gamepad
+{
+    color: rgba(0, 0, 128, 0.58);
+}
+.fa-lightbulb-o
+{
+    color: grey;
+}
+.fa-stack-overflow
+{
+    color: #C09553;
+}
+
+/*===================================================================================================
+                            team
+=====================================================================================================*/
+#team
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#team .team-members h4
+{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.member-title
+{
+    font-family: "Coda";
+    margin-bottom: 15px;
+}
+#team h2
+{
+    font-weight: normal;
+    text-align: center;
+}
+.team-member-description
+{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.team-member-description
+{
+    line-height: 25px;
+}
+/* media query te 991 px er niche padding right hobe 45px */
+#team a:hover, #blog a:hover
+{
+    text-decoration: none;
+}
+#team .fa
+{
+    font-size: 21px;
+}
+#team ul
+{
+    padding-top: 20px;
+}
+
+#team img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  #team h4 {
+    padding-bottom: 30px;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------
+                                Blog
+-------------------------------------------------------------------------------------------------------*/
+
+#blog
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Lora', serif;
+}
+.post
+{
+    width: 90%;
+    margin-bottom: 15px;
+}
+.row-fluid
+{
+    overflow: hidden;
+    padding: 25px 0px;
+    width: 100%;
+}
+#blog .post .post-thumbnail
+{
+    overflow: visible !important;
+}
+#blog .post .post-thumbnail .frame, #blog .post .post-thumbnail .frame img
+{
+    border-radius: 3px;
+    margin-bottom: 0;
+}
+#blog .post .post-thumbnail .frame
+{
+    padding: 8px;
+    background: #b9b9bb;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#blog .post .post-thumbnail .post-format
+{
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border: 5px solid #b8b8bb;
+    position: absolute;
+    top: -19px;
+    left: -20px;
+    background-color: #d9dad9;
+    z-index: 9999;
+}
+#blog .post .post-thumbnail .post-format span
+{
+    font-size: 33px;
+    position: relative;
+    top: 2px;
+    color: #337ab7;;
+}
+a
+{
+    outline: none;
+    text-decoration: none;
+}
+#blog .post .post-thumbnail .post-shadow
+{
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+#blog .post-excerpt
+{
+    margin-top: 18px;
+    padding-left: 70px;
+}
+#blog .post h2.title a {
+    color: rgb(32, 178, 170);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #f7f7f6;
+    font-family: 'Dosis', sans-serif;
+}
+#blog .post h2.title
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 501;
+}
+.title
+{
+    position: relative;
+}
+.line-dotted
+{
+    border-bottom: 1px dashed #a4a4a4;
+    box-shadow: 0 1px 1px #ffffff;
+    width: 100%;
+    clear: both;
+    margin-top: 19px;
+    margin-bottom: 23px;
+}
+
+.post-share a
+{
+    padding: 0px 10px;
+    font-size: 18px;
+}
+ #blog .post .post-share p
+{
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+#blog img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+                                Tutorials
+-------------------------------------------------------------------------------------------------------*/
+
+#tutorials
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Lora', serif;
+}
+.post
+{
+    width: 90%;
+    margin-bottom: 15px;
+}
+.row-fluid
+{
+    overflow: hidden;
+    padding: 25px 0px;
+    width: 100%;
+}
+#tutorials .post .post-thumbnail
+{
+    overflow: visible !important;
+}
+#tutorials .post .post-thumbnail .frame, #blog .post .post-thumbnail .frame img
+{
+    border-radius: 3px;
+    margin-bottom: 0;
+}
+#tutorials .post .post-thumbnail .frame
+{
+    padding: 8px;
+    background: #b9b9bb;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#tutorials .post .post-thumbnail .post-format
+{
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border: 5px solid #b8b8bb;
+    position: absolute;
+    top: -19px;
+    left: -20px;
+    background-color: #d9dad9;
+    z-index: 9999;
+}
+#tutorials .post .post-thumbnail .post-format span
+{
+    font-size: 33px;
+    position: relative;
+    top: 2px;
+    color: #337ab7;
+}
+a
+{
+    outline: none;
+    text-decoration: none;
+}
+#tutorials .post .post-thumbnail .post-shadow
+{
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+#tutorials .post-excerpt
+{
+    margin-top: 18px;
+    padding-left: 70px;
+}
+#tutorials .post h2.title a {
+    color: rgb(32, 178, 170);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #f7f7f6;
+    font-family: 'Dosis', sans-serif;
+}
+#tutorials .post h2.title
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 501;
+}
+.title
+{
+    position: relative;
+}
+.line-dotted
+{
+    border-bottom: 1px dashed #a4a4a4;
+    box-shadow: 0 1px 1px #ffffff;
+    width: 100%;
+    clear: both;
+    margin-top: 19px;
+    margin-bottom: 23px;
+}
+
+.post-share a
+{
+    padding: 0px 10px;
+    font-size: 18px;
+}
+ #tutorials .post .post-share p
+{
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+#tutorials img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*----------------------------------------------------------------------------------------------------
+                                    FOOTER
+-----------------------------------------------------------------------------------------------------*/
+.main-footer
+{
+    background-color: rgba(26, 26, 26, 1);
+    padding: 5px 0px;
+}
+.logo h1
+{
+    color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.theme
+{
+    font-family: "Coda";
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* padding-left: 5px; */
+}
+/* ================================================================================================================
+                        Media Query
+================================================================================================================== */
+@media (max-width: 515px){
+    .rene
+    {
+        font-size: 40px;
+    }
+}
+@media (max-width: 405px){
+    #heading-text h3
+    {
+        font-size: 45px;
+    }
+}
+@media (max-width: 350px){
+    .rene
+    {
+        font-size: 40px;
+    }
+    .starting-text h2
+    {
+        font-size: 35px;
+    }
+}
+
+.ion-ios7-arrow-down {
+    color: #fff;
+    font-size: 3em;
+}
+
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-radius: 0;
+    border-color: #337ab7;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: #3acab1;
+    border-color: #3acab1;
+}
+
+.pagination {
+    border-radius: 0;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    z-index: 99999;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+    color: #FFF;
+    background-color: #3acab1;
+    border-color: #3acab1;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #337ab7;
+}
+
+#port-items .col-md-4 {
+    padding: 0;
+}
+
+.input-group-addon {
+    border-radius: 0;
+}
+
+@media (max-width: 712px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+      position: fixed;
+  }
+}
+
+@media (max-width: 400px) {
+    #port-items .col-xs-6 {
+        width: 100%;
+    }
+
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        position: fixed;
+    }
+}
+    .main_content figure {
+        padding: 0px 105px;
+    }
+
+    .post-shadow {
+        width: 100%;
+    }
+
+    .input-group-addon {
+        background-color: rgba(238, 238, 238, 0);
+    }
